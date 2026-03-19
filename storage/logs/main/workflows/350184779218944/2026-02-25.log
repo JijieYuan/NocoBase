@@ -1,0 +1,196 @@
+[32m2026-02-25 15:38:46 [info]  toggle OFF workflow 350184779218944         [39m workflowId=350184779218944
+[32m2026-02-25 15:39:48 [info]  toggle ON workflow 350184779218944          [39m workflowId=350184779218944
+[32m2026-02-25 15:55:49 [info]  new event triggered, now events: 1          [39m 
+[34m2026-02-25 15:55:49 [debug] event data:                                 [39m context={"data":{"createdAt":"2026-02-25T07:41:18.014Z","updatedAt":"2026-02-25T07:55:08.437Z","defect":"图纸错误","defect_rank":"level1","priority":"P1","id":350185123151872,"f_jmazop48q5l":350181876760576,"createdById":1,"updatedById":1,"defect_classification":"历史遗留","module":null,"label":["历史遗留"],"defect_status":"待修复"}}
+[32m2026-02-25 15:55:49 [info]  new event triggered, now events: 2          [39m 
+[34m2026-02-25 15:55:49 [debug] event data:                                 [39m context={"data":{"createdAt":"2026-02-25T07:41:53.479Z","updatedAt":"2026-02-25T07:55:08.437Z","defect":"图纸模糊","defect_rank":"level3","priority":"P3","id":350185196552192,"f_jmazop48q5l":350181876760576,"createdById":1,"updatedById":1,"defect_classification":"历史遗留","module":null,"label":["历史遗留","已修复"],"defect_status":"已修复"}}
+[32m2026-02-25 15:55:49 [info]  new event is pending to be prepared after previous preparation is finished[39m 
+[32m2026-02-25 15:55:49 [info]  preparing execution for event               [39m 
+[32m2026-02-25 15:55:49 [info]  execution of workflow 350184779218944 created as 350186949771264[39m 
+[32m2026-02-25 15:55:49 [info]  local pending list is empty, adding execution (350186949771264) to pending list[39m 
+[32m2026-02-25 15:55:49 [info]  preparing execution for event               [39m 
+[32m2026-02-25 15:55:49 [info]  execution of workflow 350184779218944 created as 350186949771265[39m 
+[32m2026-02-25 15:55:49 [info]  instance is not serving as worker or local pending list is not empty, sending execution (350186949771265) to queue[39m 
+[32m2026-02-25 15:55:49 [info]  pending execution (350186949771264) ready to process[39m 
+[32m2026-02-25 15:55:49 [info]  execution (350186949771264) starting...     [39m 
+[32m2026-02-25 15:55:49 [info]  execution (350186949771264) run instruction [parallel] for node (350184779218945)[39m workflowId=350184779218944
+[34m2026-02-25 15:55:49 [debug] config of node                              [39m workflowId=350184779218944
+[34m2026-02-25 15:55:49 [debug] job added to save list: {"status":0,"result":[null,null],"nodeId":350184779218945,"nodeKey":"chjc97mlb5y","upstreamId":null,"id":"6964209292180480","createdAt":"2026-02-25T07:55:49.787Z","updatedAt":"2026-02-25T07:55:49.787Z","executionId":350186949771264}[39m workflowId=350184779218944
+[32m2026-02-25 15:55:49 [info]  execution (350186949771264) run instruction [aggregate] for node (350184779218947)[39m workflowId=350184779218944
+[34m2026-02-25 15:55:49 [debug] config of node                              [39m data={"aggregator":"count","associated":true,"params":{"field":"id","filter":{"$and":[]}},"precision":2,"collection":"defects","association":{"name":"all_defects","associatedKey":"{{$context.data.parent_summary.id}}","associatedCollection":"collection_quality"}} workflowId=350184779218944
+[31m2026-02-25 15:55:49 [error] execution (350186949771264) run instruction [aggregate] for node (350184779218947) failed: [39m workflowId=350184779218944
+[34m2026-02-25 15:55:49 [debug] job added to save list: {"result":{"message":"WHERE parameter \"f_jmazop48q5l\" has invalid \"undefined\" value"},"status":-2,"nodeId":350184779218947,"nodeKey":"ca6c1jxzwq5","id":"6964209296374784","createdAt":"2026-02-25T07:55:49.788Z","updatedAt":"2026-02-25T07:55:49.788Z","executionId":350186949771264}[39m workflowId=350184779218944
+[32m2026-02-25 15:55:49 [info]  execution (350186949771264) run instruction [aggregate] for node (350184779218947) finished as status: -2[39m workflowId=350184779218944
+[34m2026-02-25 15:55:49 [debug] result of node                              [39m data={"message":"WHERE parameter \"f_jmazop48q5l\" has invalid \"undefined\" value"}
+[34m2026-02-25 15:55:49 [debug] branch ended at node (350184779218947)      [39m 
+[34m2026-02-25 15:55:49 [debug] not on main, recall to parent entry node (350184779218947)})[39m workflowId=350184779218944
+[32m2026-02-25 15:55:49 [info]  execution (350186949771264) resume instruction [parallel] for node (350184779218945)[39m workflowId=350184779218944
+[34m2026-02-25 15:55:49 [debug] config of node                              [39m workflowId=350184779218944
+[34m2026-02-25 15:55:49 [debug] job added to save list: {"status":-2,"result":[-2,null],"nodeId":350184779218945,"nodeKey":"chjc97mlb5y","upstreamId":null,"id":"6964209292180480","createdAt":"2026-02-25T07:55:49.787Z","updatedAt":"2026-02-25T07:55:49.789Z","executionId":350186949771264}[39m workflowId=350184779218944
+[32m2026-02-25 15:55:49 [info]  execution (350186949771264) run instruction [parallel] for node (350184779218945) finished as status: -2[39m workflowId=350184779218944
+[34m2026-02-25 15:55:49 [debug] result of node                              [39m data=[-2,null]
+[34m2026-02-25 15:55:49 [debug] branch ended at node (350184779218945)      [39m 
+[32m2026-02-25 15:55:49 [info]  execution (350186949771264) exiting with status -2[39m workflowId=350184779218944
+[32m2026-02-25 15:55:49 [info]  execution (350186949771264) finished with status: -2[39m 
+[34m2026-02-25 15:55:49 [debug] execution (350186949771264) details:        [39m execution={"createdAt":"2026-02-25T07:55:49.749Z","id":350186949771264,"updatedAt":"2026-02-25T07:55:49.803Z","key":"y5dhtirx5t1","eventKey":"dced688d-673b-4f3c-8f3b-e2e29c079590","context":{"data":{"createdAt":"2026-02-25T07:41:18.014Z","updatedAt":"2026-02-25T07:55:08.437Z","defect":"图纸错误","defect_rank":"level1","priority":"P1","id":350185123151872,"f_jmazop48q5l":350181876760576,"createdById":1,"updatedById":1,"defect_classification":"历史遗留","module":null,"label":["历史遗留"],"defect_status":"待修复"}},"status":-2,"dispatched":true,"stack":null,"output":null,"manually":null,"workflowId":350184779218944}
+[32m2026-02-25 15:55:49 [info]  execution (350186949771265) fetched from db [39m 
+[32m2026-02-25 15:55:49 [info]  execution (350186949771265) starting...     [39m 
+[32m2026-02-25 15:55:49 [info]  execution (350186949771265) run instruction [parallel] for node (350184779218945)[39m workflowId=350184779218944
+[34m2026-02-25 15:55:49 [debug] config of node                              [39m workflowId=350184779218944
+[34m2026-02-25 15:55:49 [debug] job added to save list: {"status":0,"result":[null,null],"nodeId":350184779218945,"nodeKey":"chjc97mlb5y","upstreamId":null,"id":"6964209409620992","createdAt":"2026-02-25T07:55:49.815Z","updatedAt":"2026-02-25T07:55:49.815Z","executionId":350186949771265}[39m workflowId=350184779218944
+[32m2026-02-25 15:55:49 [info]  execution (350186949771265) run instruction [aggregate] for node (350184779218947)[39m workflowId=350184779218944
+[34m2026-02-25 15:55:49 [debug] config of node                              [39m data={"aggregator":"count","associated":true,"params":{"field":"id","filter":{"$and":[]}},"precision":2,"collection":"defects","association":{"name":"all_defects","associatedKey":"{{$context.data.parent_summary.id}}","associatedCollection":"collection_quality"}} workflowId=350184779218944
+[31m2026-02-25 15:55:49 [error] execution (350186949771265) run instruction [aggregate] for node (350184779218947) failed: [39m workflowId=350184779218944
+[34m2026-02-25 15:55:49 [debug] job added to save list: {"result":{"message":"WHERE parameter \"f_jmazop48q5l\" has invalid \"undefined\" value"},"status":-2,"nodeId":350184779218947,"nodeKey":"ca6c1jxzwq5","id":"6964209413815296","createdAt":"2026-02-25T07:55:49.816Z","updatedAt":"2026-02-25T07:55:49.816Z","executionId":350186949771265}[39m workflowId=350184779218944
+[32m2026-02-25 15:55:49 [info]  execution (350186949771265) run instruction [aggregate] for node (350184779218947) finished as status: -2[39m workflowId=350184779218944
+[34m2026-02-25 15:55:49 [debug] result of node                              [39m data={"message":"WHERE parameter \"f_jmazop48q5l\" has invalid \"undefined\" value"}
+[34m2026-02-25 15:55:49 [debug] branch ended at node (350184779218947)      [39m 
+[34m2026-02-25 15:55:49 [debug] not on main, recall to parent entry node (350184779218947)})[39m workflowId=350184779218944
+[32m2026-02-25 15:55:49 [info]  execution (350186949771265) resume instruction [parallel] for node (350184779218945)[39m workflowId=350184779218944
+[34m2026-02-25 15:55:49 [debug] config of node                              [39m workflowId=350184779218944
+[34m2026-02-25 15:55:49 [debug] job added to save list: {"status":-2,"result":[-2,null],"nodeId":350184779218945,"nodeKey":"chjc97mlb5y","upstreamId":null,"id":"6964209409620992","createdAt":"2026-02-25T07:55:49.815Z","updatedAt":"2026-02-25T07:55:49.817Z","executionId":350186949771265}[39m workflowId=350184779218944
+[32m2026-02-25 15:55:49 [info]  execution (350186949771265) run instruction [parallel] for node (350184779218945) finished as status: -2[39m workflowId=350184779218944
+[34m2026-02-25 15:55:49 [debug] result of node                              [39m data=[-2,null]
+[34m2026-02-25 15:55:49 [debug] branch ended at node (350184779218945)      [39m 
+[32m2026-02-25 15:55:49 [info]  execution (350186949771265) exiting with status -2[39m workflowId=350184779218944
+[32m2026-02-25 15:55:49 [info]  execution (350186949771265) finished with status: -2[39m 
+[34m2026-02-25 15:55:49 [debug] execution (350186949771265) details:        [39m execution={"createdAt":"2026-02-25T07:55:49.770Z","id":350186949771265,"updatedAt":"2026-02-25T07:55:49.819Z","key":"y5dhtirx5t1","eventKey":"e14b6e7a-b9ce-4f57-a411-01e974bcb448","context":{"data":{"createdAt":"2026-02-25T07:41:53.479Z","updatedAt":"2026-02-25T07:55:08.437Z","defect":"图纸模糊","defect_rank":"level3","priority":"P3","id":350185196552192,"f_jmazop48q5l":350181876760576,"createdById":1,"updatedById":1,"defect_classification":"历史遗留","module":null,"label":["历史遗留","已修复"],"defect_status":"已修复"}},"status":-2,"dispatched":true,"stack":null,"output":null,"manually":null,"workflowId":350184779218944}
+[32m2026-02-25 15:55:55 [info]  new event triggered, now events: 1          [39m 
+[34m2026-02-25 15:55:55 [debug] event data:                                 [39m context={"data":{"createdAt":"2026-02-25T07:42:24.323Z","updatedAt":"2026-02-25T07:55:08.438Z","defect":"图纸错误","defect_rank":"level1","priority":"P1","id":350185261563904,"f_jmazop48q5l":350181897732096,"createdById":1,"updatedById":1,"defect_classification":"历史遗留","module":null,"label":["历史遗留","已修复"],"defect_status":"已修复"}}
+[32m2026-02-25 15:55:55 [info]  preparing execution for event               [39m 
+[32m2026-02-25 15:55:55 [info]  execution of workflow 350184779218944 created as 350186962354176[39m 
+[32m2026-02-25 15:55:55 [info]  local pending list is empty, adding execution (350186962354176) to pending list[39m 
+[32m2026-02-25 15:55:55 [info]  pending execution (350186962354176) ready to process[39m 
+[32m2026-02-25 15:55:55 [info]  execution (350186962354176) starting...     [39m 
+[32m2026-02-25 15:55:55 [info]  execution (350186962354176) run instruction [parallel] for node (350184779218945)[39m workflowId=350184779218944
+[34m2026-02-25 15:55:55 [debug] config of node                              [39m workflowId=350184779218944
+[34m2026-02-25 15:55:55 [debug] job added to save list: {"status":0,"result":[null,null],"nodeId":350184779218945,"nodeKey":"chjc97mlb5y","upstreamId":null,"id":"6964232029502464","createdAt":"2026-02-25T07:55:55.208Z","updatedAt":"2026-02-25T07:55:55.208Z","executionId":350186962354176}[39m workflowId=350184779218944
+[32m2026-02-25 15:55:55 [info]  execution (350186962354176) run instruction [aggregate] for node (350184779218947)[39m workflowId=350184779218944
+[34m2026-02-25 15:55:55 [debug] config of node                              [39m data={"aggregator":"count","associated":true,"params":{"field":"id","filter":{"$and":[]}},"precision":2,"collection":"defects","association":{"name":"all_defects","associatedKey":"{{$context.data.parent_summary.id}}","associatedCollection":"collection_quality"}} workflowId=350184779218944
+[31m2026-02-25 15:55:55 [error] execution (350186962354176) run instruction [aggregate] for node (350184779218947) failed: [39m workflowId=350184779218944
+[34m2026-02-25 15:55:55 [debug] job added to save list: {"result":{"message":"WHERE parameter \"f_jmazop48q5l\" has invalid \"undefined\" value"},"status":-2,"nodeId":350184779218947,"nodeKey":"ca6c1jxzwq5","id":"6964232033696768","createdAt":"2026-02-25T07:55:55.209Z","updatedAt":"2026-02-25T07:55:55.209Z","executionId":350186962354176}[39m workflowId=350184779218944
+[32m2026-02-25 15:55:55 [info]  execution (350186962354176) run instruction [aggregate] for node (350184779218947) finished as status: -2[39m workflowId=350184779218944
+[34m2026-02-25 15:55:55 [debug] result of node                              [39m data={"message":"WHERE parameter \"f_jmazop48q5l\" has invalid \"undefined\" value"}
+[34m2026-02-25 15:55:55 [debug] branch ended at node (350184779218947)      [39m 
+[34m2026-02-25 15:55:55 [debug] not on main, recall to parent entry node (350184779218947)})[39m workflowId=350184779218944
+[32m2026-02-25 15:55:55 [info]  execution (350186962354176) resume instruction [parallel] for node (350184779218945)[39m workflowId=350184779218944
+[34m2026-02-25 15:55:55 [debug] config of node                              [39m workflowId=350184779218944
+[34m2026-02-25 15:55:55 [debug] job added to save list: {"status":-2,"result":[-2,null],"nodeId":350184779218945,"nodeKey":"chjc97mlb5y","upstreamId":null,"id":"6964232029502464","createdAt":"2026-02-25T07:55:55.208Z","updatedAt":"2026-02-25T07:55:55.213Z","executionId":350186962354176}[39m workflowId=350184779218944
+[32m2026-02-25 15:55:55 [info]  execution (350186962354176) run instruction [parallel] for node (350184779218945) finished as status: -2[39m workflowId=350184779218944
+[34m2026-02-25 15:55:55 [debug] result of node                              [39m data=[-2,null]
+[34m2026-02-25 15:55:55 [debug] branch ended at node (350184779218945)      [39m 
+[32m2026-02-25 15:55:55 [info]  execution (350186962354176) exiting with status -2[39m workflowId=350184779218944
+[32m2026-02-25 15:55:55 [info]  execution (350186962354176) finished with status: -2[39m 
+[34m2026-02-25 15:55:55 [debug] execution (350186962354176) details:        [39m execution={"createdAt":"2026-02-25T07:55:55.198Z","id":350186962354176,"updatedAt":"2026-02-25T07:55:55.215Z","key":"y5dhtirx5t1","eventKey":"136d2d0a-b741-4cb5-b5c5-7ac28b1afaba","context":{"data":{"createdAt":"2026-02-25T07:42:24.323Z","updatedAt":"2026-02-25T07:55:08.438Z","defect":"图纸错误","defect_rank":"level1","priority":"P1","id":350185261563904,"f_jmazop48q5l":350181897732096,"createdById":1,"updatedById":1,"defect_classification":"历史遗留","module":null,"label":["历史遗留","已修复"],"defect_status":"已修复"}},"status":-2,"dispatched":true,"stack":null,"output":null,"manually":null,"workflowId":350184779218944}
+[32m2026-02-25 15:58:54 [info]  new event triggered, now events: 1          [39m 
+[34m2026-02-25 15:58:54 [debug] event data:                                 [39m context={"data":{"createdAt":"2026-02-25T07:58:38.658Z","updatedAt":"2026-02-25T07:58:38.664Z","defect":"图纸显示不全","defect_rank":"level2","priority":"P2","id":350187304189952,"f_jmazop48q5l":350187002200064,"createdById":1,"updatedById":1,"defect_classification":"历史遗留","module":350187056726016,"label":["历史遗留"],"defect_status":"待修复"}}
+[32m2026-02-25 15:58:54 [info]  preparing execution for event               [39m 
+[32m2026-02-25 15:58:54 [info]  execution of workflow 350184779218944 created as 350187337744384[39m 
+[32m2026-02-25 15:58:54 [info]  local pending list is empty, adding execution (350187337744384) to pending list[39m 
+[32m2026-02-25 15:58:54 [info]  pending execution (350187337744384) ready to process[39m 
+[32m2026-02-25 15:58:54 [info]  execution (350187337744384) starting...     [39m 
+[32m2026-02-25 15:58:54 [info]  execution (350187337744384) run instruction [parallel] for node (350184779218945)[39m workflowId=350184779218944
+[34m2026-02-25 15:58:54 [debug] config of node                              [39m workflowId=350184779218944
+[34m2026-02-25 15:58:54 [debug] job added to save list: {"status":0,"result":[null,null],"nodeId":350184779218945,"nodeKey":"chjc97mlb5y","upstreamId":null,"id":"6964984391171072","createdAt":"2026-02-25T07:58:54.585Z","updatedAt":"2026-02-25T07:58:54.585Z","executionId":350187337744384}[39m workflowId=350184779218944
+[32m2026-02-25 15:58:54 [info]  execution (350187337744384) run instruction [aggregate] for node (350184779218947)[39m workflowId=350184779218944
+[34m2026-02-25 15:58:54 [debug] config of node                              [39m data={"aggregator":"count","associated":true,"params":{"field":"id","filter":{"$and":[]}},"precision":2,"collection":"defects","association":{"name":"all_defects","associatedKey":"{{$context.data.parent_summary.id}}","associatedCollection":"collection_quality"}} workflowId=350184779218944
+[31m2026-02-25 15:58:54 [error] execution (350187337744384) run instruction [aggregate] for node (350184779218947) failed: [39m workflowId=350184779218944
+[34m2026-02-25 15:58:54 [debug] job added to save list: {"result":{"message":"WHERE parameter \"f_jmazop48q5l\" has invalid \"undefined\" value"},"status":-2,"nodeId":350184779218947,"nodeKey":"ca6c1jxzwq5","id":"6964984399559680","createdAt":"2026-02-25T07:58:54.587Z","updatedAt":"2026-02-25T07:58:54.587Z","executionId":350187337744384}[39m workflowId=350184779218944
+[32m2026-02-25 15:58:54 [info]  execution (350187337744384) run instruction [aggregate] for node (350184779218947) finished as status: -2[39m workflowId=350184779218944
+[34m2026-02-25 15:58:54 [debug] result of node                              [39m data={"message":"WHERE parameter \"f_jmazop48q5l\" has invalid \"undefined\" value"}
+[34m2026-02-25 15:58:54 [debug] branch ended at node (350184779218947)      [39m 
+[34m2026-02-25 15:58:54 [debug] not on main, recall to parent entry node (350184779218947)})[39m workflowId=350184779218944
+[32m2026-02-25 15:58:54 [info]  execution (350187337744384) resume instruction [parallel] for node (350184779218945)[39m workflowId=350184779218944
+[34m2026-02-25 15:58:54 [debug] config of node                              [39m workflowId=350184779218944
+[34m2026-02-25 15:58:54 [debug] job added to save list: {"status":-2,"result":[-2,null],"nodeId":350184779218945,"nodeKey":"chjc97mlb5y","upstreamId":null,"id":"6964984391171072","createdAt":"2026-02-25T07:58:54.585Z","updatedAt":"2026-02-25T07:58:54.588Z","executionId":350187337744384}[39m workflowId=350184779218944
+[32m2026-02-25 15:58:54 [info]  execution (350187337744384) run instruction [parallel] for node (350184779218945) finished as status: -2[39m workflowId=350184779218944
+[34m2026-02-25 15:58:54 [debug] result of node                              [39m data=[-2,null]
+[34m2026-02-25 15:58:54 [debug] branch ended at node (350184779218945)      [39m 
+[32m2026-02-25 15:58:54 [info]  execution (350187337744384) exiting with status -2[39m workflowId=350184779218944
+[32m2026-02-25 15:58:54 [info]  execution (350187337744384) finished with status: -2[39m 
+[34m2026-02-25 15:58:54 [debug] execution (350187337744384) details:        [39m execution={"createdAt":"2026-02-25T07:58:54.559Z","id":350187337744384,"updatedAt":"2026-02-25T07:58:54.597Z","key":"y5dhtirx5t1","eventKey":"ea0e57c4-d835-443a-950f-ea1f807a22a0","context":{"data":{"createdAt":"2026-02-25T07:58:38.658Z","updatedAt":"2026-02-25T07:58:38.664Z","defect":"图纸显示不全","defect_rank":"level2","priority":"P2","id":350187304189952,"f_jmazop48q5l":350187002200064,"createdById":1,"updatedById":1,"defect_classification":"历史遗留","module":350187056726016,"label":["历史遗留"],"defect_status":"待修复"}},"status":-2,"dispatched":true,"stack":null,"output":null,"manually":null,"workflowId":350184779218944}
+[32m2026-02-25 16:00:08 [info]  new event triggered, now events: 1          [39m 
+[34m2026-02-25 16:00:08 [debug] event data:                                 [39m context={"data":{"createdAt":"2026-02-25T07:56:57.946Z","updatedAt":"2026-02-25T07:56:57.951Z","defect":"图纸显示不全","defect_rank":"level1","priority":"P1","id":350187092377600,"f_jmazop48q5l":350187002200064,"createdById":1,"updatedById":1,"defect_classification":"历史遗留","module":350187056726016,"label":["历史遗留"],"defect_status":"待修复"}}
+[32m2026-02-25 16:00:08 [info]  new event triggered, now events: 2          [39m 
+[34m2026-02-25 16:00:08 [debug] event data:                                 [39m context={"data":{"createdAt":"2026-02-25T07:57:12.889Z","updatedAt":"2026-02-25T07:57:12.896Z","defect":"图纸错误","defect_rank":"level1","priority":"P1","id":350187123834880,"f_jmazop48q5l":350187002200064,"createdById":1,"updatedById":1,"defect_classification":"历史遗留","module":350187056726016,"label":["历史遗留","已修复"],"defect_status":"已修复"}}
+[32m2026-02-25 16:00:08 [info]  new event is pending to be prepared after previous preparation is finished[39m 
+[32m2026-02-25 16:00:08 [info]  new event triggered, now events: 3          [39m 
+[34m2026-02-25 16:00:08 [debug] event data:                                 [39m context={"data":{"createdAt":"2026-02-25T07:57:35.697Z","updatedAt":"2026-02-25T07:57:35.703Z","defect":"图纸模糊","defect_rank":"level3","priority":"P3","id":350187172069376,"f_jmazop48q5l":350187002200064,"createdById":1,"updatedById":1,"defect_classification":"历史遗留","module":350187056726016,"label":["历史遗留","已修复"],"defect_status":"已修复"}}
+[32m2026-02-25 16:00:08 [info]  new event is pending to be prepared after previous preparation is finished[39m 
+[32m2026-02-25 16:00:08 [info]  preparing execution for event               [39m 
+[32m2026-02-25 16:00:08 [info]  execution of workflow 350184779218944 created as 350187492933632[39m 
+[32m2026-02-25 16:00:08 [info]  local pending list is empty, adding execution (350187492933632) to pending list[39m 
+[32m2026-02-25 16:00:08 [info]  preparing execution for event               [39m 
+[32m2026-02-25 16:00:08 [info]  execution of workflow 350184779218944 created as 350187492933633[39m 
+[32m2026-02-25 16:00:08 [info]  instance is not serving as worker or local pending list is not empty, sending execution (350187492933633) to queue[39m 
+[32m2026-02-25 16:00:08 [info]  preparing execution for event               [39m 
+[32m2026-02-25 16:00:08 [info]  execution of workflow 350184779218944 created as 350187492933634[39m 
+[32m2026-02-25 16:00:08 [info]  instance is not serving as worker or local pending list is not empty, sending execution (350187492933634) to queue[39m 
+[32m2026-02-25 16:00:08 [info]  pending execution (350187492933632) ready to process[39m 
+[32m2026-02-25 16:00:08 [info]  execution (350187492933632) starting...     [39m 
+[32m2026-02-25 16:00:08 [info]  execution (350187492933632) run instruction [parallel] for node (350184779218945)[39m workflowId=350184779218944
+[34m2026-02-25 16:00:08 [debug] config of node                              [39m workflowId=350184779218944
+[34m2026-02-25 16:00:08 [debug] job added to save list: {"status":0,"result":[null,null],"nodeId":350184779218945,"nodeKey":"chjc97mlb5y","upstreamId":null,"id":"6965293461044224","createdAt":"2026-02-25T08:00:08.273Z","updatedAt":"2026-02-25T08:00:08.273Z","executionId":350187492933632}[39m workflowId=350184779218944
+[32m2026-02-25 16:00:08 [info]  execution (350187492933632) run instruction [aggregate] for node (350184779218947)[39m workflowId=350184779218944
+[34m2026-02-25 16:00:08 [debug] config of node                              [39m data={"aggregator":"count","associated":true,"params":{"field":"id","filter":{"$and":[]}},"precision":2,"collection":"defects","association":{"name":"all_defects","associatedKey":"{{$context.data.parent_summary.id}}","associatedCollection":"collection_quality"}} workflowId=350184779218944
+[31m2026-02-25 16:00:08 [error] execution (350187492933632) run instruction [aggregate] for node (350184779218947) failed: [39m workflowId=350184779218944
+[34m2026-02-25 16:00:08 [debug] job added to save list: {"result":{"message":"WHERE parameter \"f_jmazop48q5l\" has invalid \"undefined\" value"},"status":-2,"nodeId":350184779218947,"nodeKey":"ca6c1jxzwq5","id":"6965293469432832","createdAt":"2026-02-25T08:00:08.275Z","updatedAt":"2026-02-25T08:00:08.275Z","executionId":350187492933632}[39m workflowId=350184779218944
+[32m2026-02-25 16:00:08 [info]  execution (350187492933632) run instruction [aggregate] for node (350184779218947) finished as status: -2[39m workflowId=350184779218944
+[34m2026-02-25 16:00:08 [debug] result of node                              [39m data={"message":"WHERE parameter \"f_jmazop48q5l\" has invalid \"undefined\" value"}
+[34m2026-02-25 16:00:08 [debug] branch ended at node (350184779218947)      [39m 
+[34m2026-02-25 16:00:08 [debug] not on main, recall to parent entry node (350184779218947)})[39m workflowId=350184779218944
+[32m2026-02-25 16:00:08 [info]  execution (350187492933632) resume instruction [parallel] for node (350184779218945)[39m workflowId=350184779218944
+[34m2026-02-25 16:00:08 [debug] config of node                              [39m workflowId=350184779218944
+[34m2026-02-25 16:00:08 [debug] job added to save list: {"status":-2,"result":[-2,null],"nodeId":350184779218945,"nodeKey":"chjc97mlb5y","upstreamId":null,"id":"6965293461044224","createdAt":"2026-02-25T08:00:08.273Z","updatedAt":"2026-02-25T08:00:08.277Z","executionId":350187492933632}[39m workflowId=350184779218944
+[32m2026-02-25 16:00:08 [info]  execution (350187492933632) run instruction [parallel] for node (350184779218945) finished as status: -2[39m workflowId=350184779218944
+[34m2026-02-25 16:00:08 [debug] result of node                              [39m data=[-2,null]
+[34m2026-02-25 16:00:08 [debug] branch ended at node (350184779218945)      [39m 
+[32m2026-02-25 16:00:08 [info]  execution (350187492933632) exiting with status -2[39m workflowId=350184779218944
+[32m2026-02-25 16:00:08 [info]  execution (350187492933632) finished with status: -2[39m 
+[34m2026-02-25 16:00:08 [debug] execution (350187492933632) details:        [39m execution={"createdAt":"2026-02-25T08:00:08.221Z","id":350187492933632,"updatedAt":"2026-02-25T08:00:08.287Z","key":"y5dhtirx5t1","eventKey":"2cbe9240-1c30-4185-bc58-5b78173d5dea","context":{"data":{"createdAt":"2026-02-25T07:56:57.946Z","updatedAt":"2026-02-25T07:56:57.951Z","defect":"图纸显示不全","defect_rank":"level1","priority":"P1","id":350187092377600,"f_jmazop48q5l":350187002200064,"createdById":1,"updatedById":1,"defect_classification":"历史遗留","module":350187056726016,"label":["历史遗留"],"defect_status":"待修复"}},"status":-2,"dispatched":true,"stack":null,"output":null,"manually":null,"workflowId":350184779218944}
+[32m2026-02-25 16:00:08 [info]  execution (350187492933633) fetched from db [39m 
+[32m2026-02-25 16:00:08 [info]  execution (350187492933633) starting...     [39m 
+[32m2026-02-25 16:00:08 [info]  execution (350187492933633) run instruction [parallel] for node (350184779218945)[39m workflowId=350184779218944
+[34m2026-02-25 16:00:08 [debug] config of node                              [39m workflowId=350184779218944
+[34m2026-02-25 16:00:08 [debug] job added to save list: {"status":0,"result":[null,null],"nodeId":350184779218945,"nodeKey":"chjc97mlb5y","upstreamId":null,"id":"6965293570096128","createdAt":"2026-02-25T08:00:08.299Z","updatedAt":"2026-02-25T08:00:08.299Z","executionId":350187492933633}[39m workflowId=350184779218944
+[32m2026-02-25 16:00:08 [info]  execution (350187492933633) run instruction [aggregate] for node (350184779218947)[39m workflowId=350184779218944
+[34m2026-02-25 16:00:08 [debug] config of node                              [39m data={"aggregator":"count","associated":true,"params":{"field":"id","filter":{"$and":[]}},"precision":2,"collection":"defects","association":{"name":"all_defects","associatedKey":"{{$context.data.parent_summary.id}}","associatedCollection":"collection_quality"}} workflowId=350184779218944
+[31m2026-02-25 16:00:08 [error] execution (350187492933633) run instruction [aggregate] for node (350184779218947) failed: [39m workflowId=350184779218944
+[34m2026-02-25 16:00:08 [debug] job added to save list: {"result":{"message":"WHERE parameter \"f_jmazop48q5l\" has invalid \"undefined\" value"},"status":-2,"nodeId":350184779218947,"nodeKey":"ca6c1jxzwq5","id":"6965293578484736","createdAt":"2026-02-25T08:00:08.301Z","updatedAt":"2026-02-25T08:00:08.301Z","executionId":350187492933633}[39m workflowId=350184779218944
+[32m2026-02-25 16:00:08 [info]  execution (350187492933633) run instruction [aggregate] for node (350184779218947) finished as status: -2[39m workflowId=350184779218944
+[34m2026-02-25 16:00:08 [debug] result of node                              [39m data={"message":"WHERE parameter \"f_jmazop48q5l\" has invalid \"undefined\" value"}
+[34m2026-02-25 16:00:08 [debug] branch ended at node (350184779218947)      [39m 
+[34m2026-02-25 16:00:08 [debug] not on main, recall to parent entry node (350184779218947)})[39m workflowId=350184779218944
+[32m2026-02-25 16:00:08 [info]  execution (350187492933633) resume instruction [parallel] for node (350184779218945)[39m workflowId=350184779218944
+[34m2026-02-25 16:00:08 [debug] config of node                              [39m workflowId=350184779218944
+[34m2026-02-25 16:00:08 [debug] job added to save list: {"status":-2,"result":[-2,null],"nodeId":350184779218945,"nodeKey":"chjc97mlb5y","upstreamId":null,"id":"6965293570096128","createdAt":"2026-02-25T08:00:08.299Z","updatedAt":"2026-02-25T08:00:08.303Z","executionId":350187492933633}[39m workflowId=350184779218944
+[32m2026-02-25 16:00:08 [info]  execution (350187492933633) run instruction [parallel] for node (350184779218945) finished as status: -2[39m workflowId=350184779218944
+[34m2026-02-25 16:00:08 [debug] result of node                              [39m data=[-2,null]
+[34m2026-02-25 16:00:08 [debug] branch ended at node (350184779218945)      [39m 
+[32m2026-02-25 16:00:08 [info]  execution (350187492933633) exiting with status -2[39m workflowId=350184779218944
+[32m2026-02-25 16:00:08 [info]  execution (350187492933633) finished with status: -2[39m 
+[34m2026-02-25 16:00:08 [debug] execution (350187492933633) details:        [39m execution={"createdAt":"2026-02-25T08:00:08.251Z","id":350187492933633,"updatedAt":"2026-02-25T08:00:08.305Z","key":"y5dhtirx5t1","eventKey":"34ebce8f-38c2-4d9c-bdb3-bd42f80353ed","context":{"data":{"createdAt":"2026-02-25T07:57:12.889Z","updatedAt":"2026-02-25T07:57:12.896Z","defect":"图纸错误","defect_rank":"level1","priority":"P1","id":350187123834880,"f_jmazop48q5l":350187002200064,"createdById":1,"updatedById":1,"defect_classification":"历史遗留","module":350187056726016,"label":["历史遗留","已修复"],"defect_status":"已修复"}},"status":-2,"dispatched":true,"stack":null,"output":null,"manually":null,"workflowId":350184779218944}
+[32m2026-02-25 16:00:08 [info]  execution (350187492933634) fetched from db [39m 
+[32m2026-02-25 16:00:08 [info]  execution (350187492933634) starting...     [39m 
+[32m2026-02-25 16:00:08 [info]  execution (350187492933634) run instruction [parallel] for node (350184779218945)[39m workflowId=350184779218944
+[34m2026-02-25 16:00:08 [debug] config of node                              [39m workflowId=350184779218944
+[34m2026-02-25 16:00:08 [debug] job added to save list: {"status":0,"result":[null,null],"nodeId":350184779218945,"nodeKey":"chjc97mlb5y","upstreamId":null,"id":"6965293628816384","createdAt":"2026-02-25T08:00:08.313Z","updatedAt":"2026-02-25T08:00:08.313Z","executionId":350187492933634}[39m workflowId=350184779218944
+[32m2026-02-25 16:00:08 [info]  execution (350187492933634) run instruction [aggregate] for node (350184779218947)[39m workflowId=350184779218944
+[34m2026-02-25 16:00:08 [debug] config of node                              [39m data={"aggregator":"count","associated":true,"params":{"field":"id","filter":{"$and":[]}},"precision":2,"collection":"defects","association":{"name":"all_defects","associatedKey":"{{$context.data.parent_summary.id}}","associatedCollection":"collection_quality"}} workflowId=350184779218944
+[31m2026-02-25 16:00:08 [error] execution (350187492933634) run instruction [aggregate] for node (350184779218947) failed: [39m workflowId=350184779218944
+[34m2026-02-25 16:00:08 [debug] job added to save list: {"result":{"message":"WHERE parameter \"f_jmazop48q5l\" has invalid \"undefined\" value"},"status":-2,"nodeId":350184779218947,"nodeKey":"ca6c1jxzwq5","id":"6965293645593600","createdAt":"2026-02-25T08:00:08.317Z","updatedAt":"2026-02-25T08:00:08.317Z","executionId":350187492933634}[39m workflowId=350184779218944
+[32m2026-02-25 16:00:08 [info]  execution (350187492933634) run instruction [aggregate] for node (350184779218947) finished as status: -2[39m workflowId=350184779218944
+[34m2026-02-25 16:00:08 [debug] result of node                              [39m data={"message":"WHERE parameter \"f_jmazop48q5l\" has invalid \"undefined\" value"}
+[34m2026-02-25 16:00:08 [debug] branch ended at node (350184779218947)      [39m 
+[34m2026-02-25 16:00:08 [debug] not on main, recall to parent entry node (350184779218947)})[39m workflowId=350184779218944
+[32m2026-02-25 16:00:08 [info]  execution (350187492933634) resume instruction [parallel] for node (350184779218945)[39m workflowId=350184779218944
+[34m2026-02-25 16:00:08 [debug] config of node                              [39m workflowId=350184779218944
+[34m2026-02-25 16:00:08 [debug] job added to save list: {"status":-2,"result":[-2,null],"nodeId":350184779218945,"nodeKey":"chjc97mlb5y","upstreamId":null,"id":"6965293628816384","createdAt":"2026-02-25T08:00:08.313Z","updatedAt":"2026-02-25T08:00:08.318Z","executionId":350187492933634}[39m workflowId=350184779218944
+[32m2026-02-25 16:00:08 [info]  execution (350187492933634) run instruction [parallel] for node (350184779218945) finished as status: -2[39m workflowId=350184779218944
+[34m2026-02-25 16:00:08 [debug] result of node                              [39m data=[-2,null]
+[34m2026-02-25 16:00:08 [debug] branch ended at node (350184779218945)      [39m 
+[32m2026-02-25 16:00:08 [info]  execution (350187492933634) exiting with status -2[39m workflowId=350184779218944
+[32m2026-02-25 16:00:08 [info]  execution (350187492933634) finished with status: -2[39m 
+[34m2026-02-25 16:00:08 [debug] execution (350187492933634) details:        [39m execution={"createdAt":"2026-02-25T08:00:08.256Z","id":350187492933634,"updatedAt":"2026-02-25T08:00:08.329Z","key":"y5dhtirx5t1","eventKey":"c1e39da8-1eea-493e-bb38-0bd6ed8915e3","context":{"data":{"createdAt":"2026-02-25T07:57:35.697Z","updatedAt":"2026-02-25T07:57:35.703Z","defect":"图纸模糊","defect_rank":"level3","priority":"P3","id":350187172069376,"f_jmazop48q5l":350187002200064,"createdById":1,"updatedById":1,"defect_classification":"历史遗留","module":350187056726016,"label":["历史遗留","已修复"],"defect_status":"已修复"}},"status":-2,"dispatched":true,"stack":null,"output":null,"manually":null,"workflowId":350184779218944}
+[32m2026-02-25 16:05:27 [info]  toggle OFF workflow 350184779218944         [39m workflowId=350184779218944
+[32m2026-02-25 16:05:27 [info]  toggle OFF workflow 350184779218944         [39m workflowId=350184779218944

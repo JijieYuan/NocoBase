@@ -1,0 +1,2 @@
+[34m2026-02-12 18:03:16 [debug] Running cleanup for completed tasks...      [39m module=application app=main reqId=742e7c24-7379-4ea8-9eed-4307a9eb3fb7 dataSourceKey=main
+[34m2026-02-12 18:03:18 [debug] Found 0 tasks to cleanup                    [39m module=application app=main reqId=742e7c24-7379-4ea8-9eed-4307a9eb3fb7 dataSourceKey=main

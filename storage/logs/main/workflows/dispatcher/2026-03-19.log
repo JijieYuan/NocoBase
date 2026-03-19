@@ -1,0 +1,93 @@
+[34m2026-03-19 08:45:32 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 08:45:32 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 08:50:30 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 08:50:30 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 08:55:30 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 08:55:30 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 09:00:30 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 09:00:30 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 09:05:30 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 09:05:30 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 09:10:31 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 09:10:31 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 09:15:31 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 09:15:31 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 09:20:31 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 09:20:31 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 09:25:31 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 09:25:31 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 09:30:31 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 09:30:31 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 09:35:31 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 09:35:31 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 09:40:31 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 09:40:31 [debug] no execution in db queued to process        [39m 
+[32m2026-03-19 09:40:36 [info]  no more events need to be prepared, dispatching...[39m 
+[34m2026-03-19 09:40:36 [debug] last process finished, will do another dispatch[39m 
+[34m2026-03-19 09:40:36 [debug] last process finished, will do another dispatch[39m 
+[34m2026-03-19 09:40:36 [debug] last process finished, will do another dispatch[39m 
+[34m2026-03-19 09:40:36 [debug] no execution in db queued to process        [39m 
+[32m2026-03-19 09:40:36 [info]  execution (354126003109890) from queue not found or not in queueing status, skip[39m 
+[32m2026-03-19 09:40:37 [info]  execution (354126003109891) from queue not found or not in queueing status, skip[39m 
+[34m2026-03-19 09:45:31 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 09:45:31 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 09:50:31 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 09:50:31 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 09:55:31 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 09:55:31 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 10:00:31 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 10:00:31 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 10:05:31 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 10:05:31 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 10:10:31 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 10:10:31 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 10:15:31 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 10:15:31 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 10:20:31 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 10:20:31 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 10:25:31 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 10:25:31 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 10:30:31 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 10:30:31 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 10:35:31 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 10:35:31 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 10:40:31 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 10:40:31 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 10:45:31 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 10:45:31 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 10:50:31 [debug] (cycling) check for queueing executions     [39m 
+[31m2026-03-19 10:50:31 [error] fetching execution from db failed:          [39m error={"name":"SequelizeConnectionRefusedError","parent":{"code":"ECONNREFUSED"},"original":{"code":"ECONNREFUSED"}}
+[34m2026-03-19 10:55:31 [debug] (cycling) check for queueing executions     [39m 
+[31m2026-03-19 10:55:31 [error] fetching execution from db failed:          [39m error={"name":"SequelizeConnectionRefusedError","parent":{"code":"ECONNREFUSED"},"original":{"code":"ECONNREFUSED"}}
+[32m2026-03-19 11:15:33 [info]  (starting) check for queueing executions    [39m 
+[34m2026-03-19 11:15:35 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 11:20:33 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 11:20:33 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 11:25:33 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 11:25:33 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 11:30:33 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 11:30:33 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 11:35:33 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 11:35:33 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 11:40:33 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 11:40:33 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 11:45:33 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 11:45:34 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 11:50:33 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 11:50:33 [debug] no execution in db queued to process        [39m 
+[32m2026-03-19 12:34:31 [info]  (starting) check for queueing executions    [39m 
+[34m2026-03-19 12:34:31 [debug] no execution in db queued to process        [39m 
+[32m2026-03-19 12:37:06 [info]  (starting) check for queueing executions    [39m 
+[34m2026-03-19 12:37:06 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 12:42:06 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 12:42:06 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 12:47:06 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 12:47:06 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 12:52:06 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 12:52:06 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 12:57:06 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 12:57:06 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 13:02:06 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 13:02:06 [debug] no execution in db queued to process        [39m 
+[34m2026-03-19 13:07:06 [debug] (cycling) check for queueing executions     [39m 
+[34m2026-03-19 13:07:06 [debug] no execution in db queued to process        [39m 

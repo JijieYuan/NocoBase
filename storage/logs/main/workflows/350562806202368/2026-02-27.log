@@ -1,0 +1,22 @@
+[32m2026-02-27 17:43:18 [info]  toggle OFF workflow 350562806202368         [39m workflowId=350562806202368
+[32m2026-02-27 17:43:24 [info]  toggle ON workflow 350562806202368          [39m workflowId=350562806202368
+[32m2026-02-27 17:45:31 [info]  toggle OFF workflow 350562806202368         [39m workflowId=350562806202368
+[32m2026-02-27 17:45:32 [info]  toggle ON workflow 350562806202368          [39m workflowId=350562806202368
+[32m2026-02-27 17:45:46 [info]  new event triggered, now events: 1          [39m 
+[34m2026-02-27 17:45:46 [debug] event data:                                 [39m context={"data":{"createdAt":"2026-02-27T09:32:46.354Z","updatedAt":"2026-02-27T09:32:46.358Z","defect_classification":"网退","defect":"核心算法模块代码回退导致崩溃","defect_rank":"level1","priority":"P1","id":350561535328256,"defect_status":"已修复","module":null,"f_jmazop48q5l":350560931348480,"createdById":1,"updatedById":1,"label":["已修复"]}}
+[32m2026-02-27 17:45:46 [info]  preparing execution for event               [39m 
+[32m2026-02-27 17:45:46 [info]  execution of workflow 350562806202368 created as 350563171106816[39m 
+[32m2026-02-27 17:45:46 [info]  local pending list is empty, adding execution (350563171106816) to pending list[39m 
+[32m2026-02-27 17:45:46 [info]  pending execution (350563171106816) ready to process[39m 
+[32m2026-02-27 17:45:46 [info]  execution (350563171106816) starting...     [39m 
+[32m2026-02-27 17:45:46 [info]  execution (350563171106816) run instruction [loop] for node (350562806202369)[39m workflowId=350562806202368
+[34m2026-02-27 17:45:46 [debug] config of node                              [39m data={"target":"{{$context.data.module_ref}}","condition":false,"exit":0} workflowId=350562806202368
+[34m2026-02-27 17:45:46 [debug] job added to save list: {"status":1,"result":{"looped":0,"done":0},"nodeId":350562806202369,"nodeKey":"60k98hgp2i2","id":"7716654892995584","createdAt":"2026-02-27T09:45:46.798Z","updatedAt":"2026-02-27T09:45:46.798Z","executionId":350563171106816}[39m workflowId=350562806202368
+[32m2026-02-27 17:45:46 [info]  execution (350563171106816) run instruction [loop] for node (350562806202369) finished as status: 1[39m workflowId=350562806202368
+[34m2026-02-27 17:45:46 [debug] result of node                              [39m data={"looped":0,"done":0}
+[34m2026-02-27 17:45:46 [debug] branch ended at node (350562806202369)      [39m 
+[32m2026-02-27 17:45:46 [info]  execution (350563171106816) exiting with status 1[39m workflowId=350562806202368
+[32m2026-02-27 17:45:46 [info]  execution (350563171106816) finished with status: 1[39m 
+[34m2026-02-27 17:45:46 [debug] execution (350563171106816) details:        [39m execution={"createdAt":"2026-02-27T09:45:46.762Z","id":350563171106816,"updatedAt":"2026-02-27T09:45:46.805Z","key":"2tr8a1w2sgx","eventKey":"4c6e57c1-d2b5-4db8-963a-01bb702e131f","context":{"data":{"createdAt":"2026-02-27T09:32:46.354Z","updatedAt":"2026-02-27T09:32:46.358Z","defect_classification":"网退","defect":"核心算法模块代码回退导致崩溃","defect_rank":"level1","priority":"P1","id":350561535328256,"defect_status":"已修复","module":null,"f_jmazop48q5l":350560931348480,"createdById":1,"updatedById":1,"label":["已修复"]}},"status":1,"dispatched":true,"stack":null,"output":null,"manually":null,"workflowId":350562806202368}
+[32m2026-02-27 18:05:29 [info]  toggle OFF workflow 350562806202368         [39m workflowId=350562806202368
+[32m2026-02-27 18:05:29 [info]  toggle OFF workflow 350562806202368         [39m workflowId=350562806202368

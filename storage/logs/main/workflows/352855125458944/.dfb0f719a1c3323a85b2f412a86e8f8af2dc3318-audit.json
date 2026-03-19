@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\admin\\my-nocobase-app\\storage\\logs\\main\\workflows\\352855125458944\\.dfb0f719a1c3323a85b2f412a86e8f8af2dc3318-audit.json",
+    "files": [
+        {
+            "date": 1773278467262,
+            "name": "C:\\Users\\admin\\my-nocobase-app\\storage\\logs\\main\\workflows\\352855125458944\\2026-03-12.log",
+            "hash": "9cbcd2bd2d375cd49725c5c6d566e930e681244d503746dd805f5af287803f8b"
+        }
+    ],
+    "hashType": "sha256"
+}

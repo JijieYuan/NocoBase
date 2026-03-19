@@ -1,0 +1,31 @@
+[32m2026-03-03 11:36:02 [info]  toggle ON workflow 351241335537664          [39m workflowId=351241335537664
+[32m2026-03-03 11:38:58 [info]  new event triggered, now events: 1          [39m 
+[34m2026-03-03 11:38:58 [debug] event data:                                 [39m context={"data":{"createdAt":"2026-03-03T03:36:49.413Z","updatedAt":"2026-03-03T03:36:49.415Z","f_jmazop48q5l":351241455075328,"defect_classification":"挂机","defect_status":"已关闭","defect":"导入大型文件时系统界面挂机","defect_rank":"level1","priority":"P1","id":351241522184192,"module":null,"label":["已修复","已关闭"],"createdById":1,"updatedById":1,"round":"CC2026R2第二轮测试"}}
+[32m2026-03-03 11:38:58 [info]  preparing execution for event               [39m 
+[32m2026-03-03 11:38:58 [info]  execution of workflow 351241335537664 created as 351241792716800[39m 
+[32m2026-03-03 11:38:58 [info]  local pending list is empty, adding execution (351241792716800) to pending list[39m 
+[32m2026-03-03 11:38:58 [info]  pending execution (351241792716800) ready to process[39m 
+[32m2026-03-03 11:38:58 [info]  execution (351241792716800) starting...     [39m 
+[32m2026-03-03 11:38:58 [info]  execution (351241792716800) run instruction [query] for node (351241335537700)[39m workflowId=351241335537664
+[34m2026-03-03 11:38:58 [debug] config of node                              [39m data={"multiple":true,"collection":"module_summaries","params":{"filter":{"$and":[{"module_defects":{"module_ref":{"id":{"$eq":"{{$context.data.f_jmazop48q5l}}"}}}},{"round":{"$eq":"{{$context.data.round}}"}}]},"sort":[],"page":1,"pageSize":20,"appends":[]}} workflowId=351241335537664
+[34m2026-03-03 11:38:58 [debug] job added to save list: {"result":[],"status":1,"nodeId":351241335537700,"nodeKey":"nf44eok9nnt","id":"9073895319538688","createdAt":"2026-03-03T03:38:58.132Z","updatedAt":"2026-03-03T03:38:58.132Z","executionId":351241792716800}[39m workflowId=351241335537664
+[32m2026-03-03 11:38:58 [info]  execution (351241792716800) run instruction [query] for node (351241335537700) finished as status: 1[39m workflowId=351241335537664
+[34m2026-03-03 11:38:58 [debug] result of node                              [39m 
+[34m2026-03-03 11:38:58 [debug] run next node (351241335537702)             [39m 
+[32m2026-03-03 11:38:58 [info]  execution (351241792716800) run instruction [sql] for node (351241335537702)[39m workflowId=351241335537664
+[34m2026-03-03 11:38:58 [debug] config of node                              [39m data={"dataSource":"main","sql":"SELECT \n    COUNT(id) AS project_total_count \nFROM defects \nWHERE (NOT (label ?| ARRAY['功能屏蔽','已拒绝','建议','申请否决','数据异常','设计如此','需求']) OR label IS NULL)\nAND defect_status != '无需修复'\nAND f_jmazop48q5l = {{$context.data.f_jmazop48q5l}};"} workflowId=351241335537664
+[34m2026-03-03 11:38:58 [debug] job added to save list: {"result":[{"project_total_count":0}],"status":1,"nodeId":351241335537702,"nodeKey":"4oowzbkwxg4","id":"9073895332121600","createdAt":"2026-03-03T03:38:58.135Z","updatedAt":"2026-03-03T03:38:58.135Z","executionId":351241792716800}[39m workflowId=351241335537664
+[32m2026-03-03 11:38:58 [info]  execution (351241792716800) run instruction [sql] for node (351241335537702) finished as status: 1[39m workflowId=351241335537664
+[34m2026-03-03 11:38:58 [debug] result of node                              [39m data=[{"project_total_count":0}]
+[34m2026-03-03 11:38:58 [debug] run next node (351241335537675)             [39m 
+[32m2026-03-03 11:38:58 [info]  execution (351241792716800) run instruction [loop] for node (351241335537675)[39m workflowId=351241335537664
+[34m2026-03-03 11:38:58 [debug] config of node                              [39m data={"target":"{{$jobsMapByNodeKey.nf44eok9nnt}}","condition":false,"exit":0} workflowId=351241335537664
+[34m2026-03-03 11:38:58 [debug] job added to save list: {"status":1,"result":{"looped":0,"done":0},"nodeId":351241335537675,"nodeKey":"60k98hgp2i2","id":"9073895336315904","createdAt":"2026-03-03T03:38:58.136Z","updatedAt":"2026-03-03T03:38:58.136Z","executionId":351241792716800}[39m workflowId=351241335537664
+[32m2026-03-03 11:38:58 [info]  execution (351241792716800) run instruction [loop] for node (351241335537675) finished as status: 1[39m workflowId=351241335537664
+[34m2026-03-03 11:38:58 [debug] result of node                              [39m data={"looped":0,"done":0}
+[34m2026-03-03 11:38:58 [debug] branch ended at node (351241335537675)      [39m 
+[32m2026-03-03 11:38:58 [info]  execution (351241792716800) exiting with status 1[39m workflowId=351241335537664
+[32m2026-03-03 11:38:58 [info]  execution (351241792716800) finished with status: 1[39m 
+[34m2026-03-03 11:38:58 [debug] execution (351241792716800) details:        [39m execution={"createdAt":"2026-03-03T03:38:58.113Z","id":351241792716800,"updatedAt":"2026-03-03T03:38:58.145Z","key":"l3f3yraw2ao","eventKey":"f866cf1f-e29f-4d1e-8ac7-25a7b1b456a4","context":{"data":{"createdAt":"2026-03-03T03:36:49.413Z","updatedAt":"2026-03-03T03:36:49.415Z","f_jmazop48q5l":351241455075328,"defect_classification":"挂机","defect_status":"已关闭","defect":"导入大型文件时系统界面挂机","defect_rank":"level1","priority":"P1","id":351241522184192,"module":null,"label":["已修复","已关闭"],"createdById":1,"updatedById":1,"round":"CC2026R2第二轮测试"}},"status":1,"dispatched":true,"stack":null,"output":null,"manually":null,"workflowId":351241335537664}
+[32m2026-03-03 13:59:10 [info]  toggle OFF workflow 351241335537664         [39m workflowId=351241335537664
+[32m2026-03-03 13:59:10 [info]  toggle OFF workflow 351241335537664         [39m workflowId=351241335537664

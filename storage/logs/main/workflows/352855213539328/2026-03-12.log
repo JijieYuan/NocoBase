@@ -1,0 +1,35 @@
+[32m2026-03-12 09:23:24 [info]  toggle ON workflow 352855213539328          [39m workflowId=352855213539328
+[32m2026-03-12 09:24:07 [info]  new event triggered, now events: 1          [39m 
+[34m2026-03-12 09:24:07 [debug] event data:                                 [39m context={"data":{"createdAt":"2026-03-12T01:18:35.028Z","updatedAt":"2026-03-12T01:18:35.028Z","id":1,"createdById":1,"updatedById":1,"round":null,"page_count":null,"total_issues":1,"review_density":null,"is_standard":"否","review_hours":null,"eff_issue_hour":null,"eff_page_hour":null,"workload_indep":null,"workload_joint":null,"eff_indep_issues":null,"eff_meet_issues":null,"module_id":null,"fail_reason":null}}
+[32m2026-03-12 09:24:07 [info]  preparing execution for event               [39m 
+[32m2026-03-12 09:24:07 [info]  execution of workflow 352855213539328 created as 352855570055168[39m 
+[32m2026-03-12 09:24:07 [info]  local pending list is empty, adding execution (352855570055168) to pending list[39m 
+[32m2026-03-12 09:24:07 [info]  pending execution (352855570055168) ready to process[39m 
+[32m2026-03-12 09:24:07 [info]  execution (352855570055168) starting...     [39m 
+[32m2026-03-12 09:24:07 [info]  execution (352855570055168) run instruction [sql] for node (352855213539329)[39m workflowId=352855213539328
+[34m2026-03-12 09:24:07 [debug] config of node                              [39m data={"dataSource":"main","sql":"UPDATE review_records\nSET \n    review_density = ROUND((CAST(total_issues AS DECIMAL) / NULLIF(page_count, 0))::numeric, 2),\n    \n    eff_issue_hour = ROUND((CAST(total_issues AS DECIMAL) / NULLIF((workload_indep + workload_joint), 0))::numeric, 2),\n    \n    is_standard = CASE \n        WHEN (CAST(total_issues AS DECIMAL) / NULLIF(page_count, 0)) < 0.6 THEN '是' \n        ELSE '否' \n    END\nWHERE id = {{$context.data.id}}"} workflowId=352855213539328
+[34m2026-03-12 09:24:07 [debug] job added to save list: {"result":[],"status":1,"nodeId":352855213539329,"nodeKey":"jwi6xvyzw44","id":"12301452856790016","createdAt":"2026-03-12T01:24:07.814Z","updatedAt":"2026-03-12T01:24:07.814Z","executionId":352855570055168}[39m workflowId=352855213539328
+[32m2026-03-12 09:24:07 [info]  execution (352855570055168) run instruction [sql] for node (352855213539329) finished as status: 1[39m workflowId=352855213539328
+[34m2026-03-12 09:24:07 [debug] result of node                              [39m 
+[34m2026-03-12 09:24:07 [debug] branch ended at node (352855213539329)      [39m 
+[32m2026-03-12 09:24:07 [info]  execution (352855570055168) exiting with status 1[39m workflowId=352855213539328
+[32m2026-03-12 09:24:07 [info]  execution (352855570055168) finished with status: 1[39m 
+[34m2026-03-12 09:24:07 [debug] execution (352855570055168) details:        [39m execution={"createdAt":"2026-03-12T01:24:07.791Z","id":352855570055168,"updatedAt":"2026-03-12T01:24:07.822Z","key":"yxiy1zdgd14","eventKey":"c865e360-a805-4a0f-995e-863650a1ee64","context":{"data":{"createdAt":"2026-03-12T01:18:35.028Z","updatedAt":"2026-03-12T01:18:35.028Z","id":1,"createdById":1,"updatedById":1,"round":null,"page_count":null,"total_issues":1,"review_density":null,"is_standard":"否","review_hours":null,"eff_issue_hour":null,"eff_page_hour":null,"workload_indep":null,"workload_joint":null,"eff_indep_issues":null,"eff_meet_issues":null,"module_id":null,"fail_reason":null}},"status":1,"dispatched":true,"stack":null,"output":null,"manually":null,"workflowId":352855213539328}
+[32m2026-03-12 09:29:26 [info]  new event triggered, now events: 1          [39m 
+[34m2026-03-12 09:29:26 [debug] event data:                                 [39m context={"data":{"createdAt":"2026-03-12T01:24:11.613Z","updatedAt":"2026-03-12T01:24:11.613Z","id":1111,"createdById":1,"updatedById":1,"round":null,"page_count":null,"total_issues":1,"review_density":null,"is_standard":"否","review_hours":null,"eff_issue_hour":null,"eff_page_hour":null,"workload_indep":null,"workload_joint":null,"eff_indep_issues":null,"eff_meet_issues":null,"module_id":null,"fail_reason":null}}
+[32m2026-03-12 09:29:26 [info]  preparing execution for event               [39m 
+[32m2026-03-12 09:29:26 [info]  execution of workflow 352855213539328 created as 352856239046656[39m 
+[32m2026-03-12 09:29:26 [info]  local pending list is empty, adding execution (352856239046656) to pending list[39m 
+[32m2026-03-12 09:29:26 [info]  pending execution (352856239046656) ready to process[39m 
+[32m2026-03-12 09:29:26 [info]  execution (352856239046656) starting...     [39m 
+[32m2026-03-12 09:29:26 [info]  execution (352856239046656) run instruction [sql] for node (352855213539329)[39m workflowId=352855213539328
+[34m2026-03-12 09:29:26 [debug] config of node                              [39m data={"dataSource":"main","sql":"UPDATE review_records\nSET \n    review_density = ROUND((CAST(total_issues AS DECIMAL) / NULLIF(page_count, 0))::numeric, 2),\n    \n    eff_issue_hour = ROUND((CAST(total_issues AS DECIMAL) / NULLIF((workload_indep + workload_joint), 0))::numeric, 2),\n    \n    is_standard = CASE \n        WHEN (CAST(total_issues AS DECIMAL) / NULLIF(page_count, 0)) < 0.6 THEN '是' \n        ELSE '否' \n    END\nWHERE id = {{$context.data.id}}"} workflowId=352855213539328
+[34m2026-03-12 09:29:26 [debug] job added to save list: {"result":[],"status":1,"nodeId":352855213539329,"nodeKey":"jwi6xvyzw44","id":"12302788142828544","createdAt":"2026-03-12T01:29:26.171Z","updatedAt":"2026-03-12T01:29:26.171Z","executionId":352856239046656}[39m workflowId=352855213539328
+[32m2026-03-12 09:29:26 [info]  execution (352856239046656) run instruction [sql] for node (352855213539329) finished as status: 1[39m workflowId=352855213539328
+[34m2026-03-12 09:29:26 [debug] result of node                              [39m 
+[34m2026-03-12 09:29:26 [debug] branch ended at node (352855213539329)      [39m 
+[32m2026-03-12 09:29:26 [info]  execution (352856239046656) exiting with status 1[39m workflowId=352855213539328
+[32m2026-03-12 09:29:26 [info]  execution (352856239046656) finished with status: 1[39m 
+[34m2026-03-12 09:29:26 [debug] execution (352856239046656) details:        [39m execution={"createdAt":"2026-03-12T01:29:26.136Z","id":352856239046656,"updatedAt":"2026-03-12T01:29:26.183Z","key":"yxiy1zdgd14","eventKey":"5298fe08-1e1b-4cf3-9883-8ad8532f441b","context":{"data":{"createdAt":"2026-03-12T01:24:11.613Z","updatedAt":"2026-03-12T01:24:11.613Z","id":1111,"createdById":1,"updatedById":1,"round":null,"page_count":null,"total_issues":1,"review_density":null,"is_standard":"否","review_hours":null,"eff_issue_hour":null,"eff_page_hour":null,"workload_indep":null,"workload_joint":null,"eff_indep_issues":null,"eff_meet_issues":null,"module_id":null,"fail_reason":null}},"status":1,"dispatched":true,"stack":null,"output":null,"manually":null,"workflowId":352855213539328}
+[32m2026-03-12 09:37:26 [info]  toggle OFF workflow 352855213539328         [39m workflowId=352855213539328
+[32m2026-03-12 09:37:26 [info]  toggle OFF workflow 352855213539328         [39m workflowId=352855213539328

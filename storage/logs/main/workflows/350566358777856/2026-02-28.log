@@ -1,0 +1,30 @@
+[32m2026-02-28 08:58:06 [info]  toggle ON workflow 350566358777856          [39m workflowId=350566358777856
+[32m2026-02-28 09:04:43 [info]  toggle OFF workflow 350566358777856         [39m workflowId=350566358777856
+[32m2026-02-28 09:04:43 [info]  toggle ON workflow 350566358777856          [39m workflowId=350566358777856
+[32m2026-02-28 09:10:36 [info]  toggle OFF workflow 350566358777856 based on configuration before updated[39m workflowId=350566358777856
+[32m2026-02-28 09:10:36 [info]  toggle ON workflow 350566358777856          [39m workflowId=350566358777856
+[32m2026-02-28 09:11:12 [info]  toggle OFF workflow 350566358777856         [39m workflowId=350566358777856
+[32m2026-02-28 09:11:13 [info]  toggle ON workflow 350566358777856          [39m workflowId=350566358777856
+[32m2026-02-28 09:12:32 [info]  new event triggered, now events: 1          [39m 
+[34m2026-02-28 09:12:32 [debug] event data:                                 [39m context={"data":{"createdAt":"2026-02-28T01:12:22.856Z","updatedAt":"2026-02-28T01:12:22.864Z","defect_classification":"历史遗留","defect":"图纸显示不全","defect_rank":"level1","priority":null,"id":350679764369408,"defect_status":"已关闭","module":null,"f_jmazop48q5l":350679716134912,"createdById":1,"updatedById":1,"label":["已修复"]}}
+[32m2026-02-28 09:12:32 [info]  preparing execution for event               [39m 
+[32m2026-02-28 09:12:32 [info]  execution of workflow 350566358777856 created as 350679785340928[39m 
+[32m2026-02-28 09:12:32 [info]  local pending list is empty, adding execution (350679785340928) to pending list[39m 
+[32m2026-02-28 09:12:32 [info]  pending execution (350679785340928) ready to process[39m 
+[32m2026-02-28 09:12:32 [info]  execution (350679785340928) starting...     [39m 
+[32m2026-02-28 09:12:32 [info]  execution (350679785340928) run instruction [query] for node (350566407012352)[39m workflowId=350566358777856
+[34m2026-02-28 09:12:32 [debug] config of node                              [39m data={"multiple":false,"collection":"defects","params":{"filter":{"$and":[]},"sort":[],"page":1,"pageSize":20,"appends":["module_ref"]}} workflowId=350566358777856
+[34m2026-02-28 09:12:32 [debug] job added to save list: {"result":null,"status":1,"nodeId":350566407012352,"nodeKey":"0tvror94jge","id":"7949880177742848","createdAt":"2026-02-28T01:12:32.039Z","updatedAt":"2026-02-28T01:12:32.039Z","executionId":350679785340928}[39m workflowId=350566358777856
+[32m2026-02-28 09:12:32 [info]  execution (350679785340928) run instruction [query] for node (350566407012352) finished as status: 1[39m workflowId=350566358777856
+[34m2026-02-28 09:12:32 [debug] result of node                              [39m 
+[34m2026-02-28 09:12:32 [debug] run next node (350566423789568)             [39m 
+[32m2026-02-28 09:12:32 [info]  execution (350679785340928) run instruction [loop] for node (350566423789568)[39m workflowId=350566358777856
+[34m2026-02-28 09:12:32 [debug] config of node                              [39m data={"target":"{{$jobsMapByNodeKey.0tvror94jge.module_ref}}","condition":false,"exit":0} workflowId=350566358777856
+[34m2026-02-28 09:12:32 [debug] job added to save list: {"status":1,"result":{"looped":0,"done":0},"nodeId":350566423789568,"nodeKey":"7ltvbgsnuxi","id":"7949880181937152","createdAt":"2026-02-28T01:12:32.040Z","updatedAt":"2026-02-28T01:12:32.040Z","executionId":350679785340928}[39m workflowId=350566358777856
+[32m2026-02-28 09:12:32 [info]  execution (350679785340928) run instruction [loop] for node (350566423789568) finished as status: 1[39m workflowId=350566358777856
+[34m2026-02-28 09:12:32 [debug] result of node                              [39m data={"looped":0,"done":0}
+[34m2026-02-28 09:12:32 [debug] branch ended at node (350566423789568)      [39m 
+[32m2026-02-28 09:12:32 [info]  execution (350679785340928) exiting with status 1[39m workflowId=350566358777856
+[32m2026-02-28 09:12:32 [info]  execution (350679785340928) finished with status: 1[39m 
+[34m2026-02-28 09:12:32 [debug] execution (350679785340928) details:        [39m execution={"createdAt":"2026-02-28T01:12:32.026Z","id":350679785340928,"updatedAt":"2026-02-28T01:12:32.059Z","key":"6636t9coqu8","eventKey":"498f836d-7ebc-474a-8d82-9fa18602c2c4","context":{"data":{"createdAt":"2026-02-28T01:12:22.856Z","updatedAt":"2026-02-28T01:12:22.864Z","defect_classification":"历史遗留","defect":"图纸显示不全","defect_rank":"level1","priority":null,"id":350679764369408,"defect_status":"已关闭","module":null,"f_jmazop48q5l":350679716134912,"createdById":1,"updatedById":1,"label":["已修复"]}},"status":1,"dispatched":true,"stack":null,"output":null,"manually":null,"workflowId":350566358777856}
+[32m2026-02-28 09:14:16 [info]  toggle OFF workflow 350566358777856         [39m workflowId=350566358777856

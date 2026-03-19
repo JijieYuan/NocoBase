@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@@/*": [
+        ".dumi/tmp/*"
+      ],
+      "@my-project/plugin-gitlab-sync/client": [
+        "packages/plugins/@my-project/plugin-gitlab-sync/src/client"
+      ],
+      "@my-project/plugin-gitlab-sync/package.json": [
+        "packages/plugins/@my-project/plugin-gitlab-sync/package.json"
+      ],
+      "@my-project/plugin-gitlab-sync": [
+        "packages/plugins/@my-project/plugin-gitlab-sync/src"
+      ]
+    }
+  }
+}
