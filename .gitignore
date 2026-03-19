@@ -1,22 +1,65 @@
+# Dependencies
 node_modules/
 lib/
 esm/
 es/
+dist/
+
+# Environment files
 .env
 .env.test
 .env.e2e
-.DS_Store
-yarn-error.log
-lerna-debug.log
+.npmrc
+
+# IDE
 /.vscode
 /.idea
-*.sqlite
+*.vscode-settings.json
+
+# OS
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# Logs
+yarn-error.log
+lerna-debug.log
+/storage/logs
+npm-debug.log*
+debug.log*
+
+# Test & Coverage
 coverage
 .umi
-/uploads
-.env.test
-docs-dist/
-.npmrc
-dist/
-/docker/**/storage
+/playwright/.auth/
+/playwright/.test-results/
+
+# Storage directories
+/storage/db/
+/storage/tmp/
 /storage/.app-dev
+/storage/plugins/
+/storage/uploads/
+/storage/apps/*/
+
+# Docker
+/docker/**/storage
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+
+# Python
+.venv/
+.env.local
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Build outputs
+docs-dist/
+/uploads/
+/tmp/
