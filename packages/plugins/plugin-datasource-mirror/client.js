@@ -1,0 +1,1 @@
+module.exports = require('../@my-project/plugin-datasource-mirror/client.js');

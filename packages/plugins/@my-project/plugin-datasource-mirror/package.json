@@ -1,0 +1,40 @@
+{
+  "name": "@my-project/plugin-datasource-mirror",
+  "version": "0.1.0",
+  "displayName": "GitLab Mirror",
+  "description": "Mirror selected GitLab 16 PostgreSQL tables into the local NocoBase database and trigger sync jobs from GitLab webhooks.",
+  "main": "server.js",
+  "browser": "client.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JijieYuan/NocoBase.git"
+  },
+  "license": "AGPL-3.0-or-later",
+  "keywords": [
+    "nocobase",
+    "plugin",
+    "gitlab",
+    "postgresql",
+    "datasource",
+    "mirror",
+    "sync",
+    "webhook"
+  ],
+  "homepage": "https://github.com/JijieYuan/NocoBase",
+  "bugs": {
+    "url": "https://github.com/JijieYuan/NocoBase/issues"
+  },
+  "author": "JijieYuan",
+  "dependencies": {
+    "pg": "^8.10.0"
+  },
+  "peerDependencies": {
+    "@nocobase/client": "2.1.x",
+    "@nocobase/database": "2.1.x",
+    "@nocobase/server": "2.1.x",
+    "@nocobase/test": "2.1.x"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -4,6 +4,24 @@
       "@@/*": [
         ".dumi/tmp/*"
       ],
+      "plugin-datasource-mirror/client": [
+        "packages/plugins/plugin-datasource-mirror/src/client"
+      ],
+      "plugin-datasource-mirror/package.json": [
+        "packages/plugins/plugin-datasource-mirror/package.json"
+      ],
+      "plugin-datasource-mirror": [
+        "packages/plugins/plugin-datasource-mirror/src"
+      ],
+      "@my-project/plugin-datasource-mirror/client": [
+        "packages/plugins/@my-project/plugin-datasource-mirror/src/client"
+      ],
+      "@my-project/plugin-datasource-mirror/package.json": [
+        "packages/plugins/@my-project/plugin-datasource-mirror/package.json"
+      ],
+      "@my-project/plugin-datasource-mirror": [
+        "packages/plugins/@my-project/plugin-datasource-mirror/src"
+      ],
       "@my-project/plugin-gitlab-sync/client": [
         "packages/plugins/@my-project/plugin-gitlab-sync/src/client"
       ],

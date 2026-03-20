@@ -11,18 +11,20 @@
     "node": ">=18"
   },
   "scripts": {
-    "nocobase": "nocobase",
-    "pm": "nocobase pm",
-    "pm2": "nocobase pm2",
-    "dev": "nocobase dev",
-    "start": "nocobase start",
-    "clean": "nocobase clean",
-    "build": "nocobase build",
-    "test": "nocobase test",
-    "e2e": "nocobase e2e",
-    "tar": "nocobase tar",
-    "postinstall": "nocobase postinstall",
-    "lint": "eslint ."
+    "nocobase": "node scripts/run-node20.cjs ./node_modules/@nocobase/cli/bin/index.js",
+    "pm": "node scripts/run-node20.cjs ./node_modules/@nocobase/cli/bin/index.js pm",
+    "pm2": "node scripts/run-node20.cjs ./node_modules/@nocobase/cli/bin/index.js pm2",
+    "dev": "node scripts/run-node20.cjs ./node_modules/@nocobase/cli/bin/index.js dev",
+    "start": "node scripts/run-node20.cjs ./node_modules/@nocobase/cli/bin/index.js start",
+    "clean": "node scripts/run-node20.cjs ./node_modules/@nocobase/cli/bin/index.js clean",
+    "build": "node scripts/run-node20.cjs ./node_modules/@nocobase/cli/bin/index.js build",
+    "test": "node scripts/run-node20.cjs ./node_modules/@nocobase/cli/bin/index.js test",
+    "e2e": "node scripts/run-node20.cjs ./node_modules/@nocobase/cli/bin/index.js e2e",
+    "tar": "node scripts/run-node20.cjs ./node_modules/@nocobase/cli/bin/index.js tar",
+    "postinstall": "node scripts/run-node20.cjs ./node_modules/@nocobase/cli/bin/index.js postinstall",
+    "lint": "eslint .",
+    "typecheck:datasource-mirror": "node scripts/run-node20.cjs ./node_modules/typescript/bin/tsc -p packages/plugins/@my-project/plugin-datasource-mirror/tsconfig.json --noEmit",
+    "test:datasource-mirror": "node scripts/run-node20.cjs ./scripts/test-datasource-mirror-integration.cjs"
   },
   "resolutions": {
     "cytoscape": "3.28.0",

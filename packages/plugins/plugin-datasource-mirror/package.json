@@ -1,0 +1,8 @@
+{
+  "name": "plugin-datasource-mirror",
+  "version": "0.1.0",
+  "main": "server.js",
+  "browser": "client.js",
+  "license": "AGPL-3.0-or-later",
+  "private": true
+}
